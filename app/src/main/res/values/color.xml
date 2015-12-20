@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#03A9F4</color>
+    <color name="ColorPrimaryDark">#0288D1</color>
+    <color name="tabsScrollColor">#03A9F4</color>
+    <color name="accentColor">#448AFF</color>
+    <color name="easy">#0000FF</color>
+    <color name="lightBlue">#00BBCC</color>
+    <color name="transparent">#00000000</color>
+    <color name="tabZero">#FF5722</color>
+    <color name="tabOne">#03A9FA</color>
+    <color name="tabTwo">#FFEB3B</color>
+    <color name="blacky">#000000</color>
+    <color name="hinty">#15000000</color>
+    <color name="translucent">#70000000</color>
+
+    <color name="tabZeroColorPrimaryDark">#E64A19</color>
+    <color name="tabOneColorPrimaryDark">#2196F3</color>
+    <color name="tabTwoColorPrimaryDark">#F57C00</color>
+
+    <color name="tabZeroColorPrimary">#FF5722</color>
+    <color name="tabTwoColorPrimary">#FF9800</color>
+
+    <color name="fieldColorP">#00e5ff</color>
+    <color name="fieldColorPD">#00b8d4</color>
+    <color name="fieldBackground">#c4f9ff</color>
+
+    <color name="materialGreen">#64dd17</color>
+    <color name="materialRed">#f44336</color>
+
+    <color name="materialOrange">#FFB300</color>
+
+    <color name="materialBlue">#04AFFF</color>
+
+
+</resources>

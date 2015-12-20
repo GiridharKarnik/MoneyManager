@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.giridharkarnik.moneymanager.budgetClases.BudgetActivity">
+
+    <include
+        android:id="@+id/budgetAppBar"
+        layout="@layout/app_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <ListView
+                android:layout_margin="5dp"
+                android:id="@+id/budgetListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:gravity="bottom">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/setNewBudgetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:longClickable="true"
+                android:src="@drawable/ic_edit"
+                android:layout_margin="10dp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

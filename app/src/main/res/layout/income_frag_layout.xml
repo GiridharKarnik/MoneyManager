@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoDragView="@+id/dragView"
+        sothree:umanoOverlay="true"
+        sothree:umanoPanelHeight="0dp"
+        sothree:umanoParalaxOffset="100dp"
+        sothree:umanoShadowHeight="4dp">
+
+        <!-- Main Content-->
+        <RelativeLayout
+            android:id="@+id/mainSlidingChild"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62dp"
+                android:hint="Enter the field"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/selectedFieldIcon"
+                android:layout_alignLeft="@+id/listView2"
+                android:layout_alignStart="@+id/listView2"/>
+
+            <ImageView
+                android:id="@+id/selectedFieldIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_alignBottom="@+id/editText2"
+                android:layout_alignRight="@+id/listView2"
+                android:layout_alignEnd="@+id/listView2"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:text="@string/add_income"/>
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button4"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:divider="@android:color/transparent"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"/>
+
+
+        </RelativeLayout>
+
+        <!--Hidden Layout Contents-->
+        <LinearLayout
+            android:id="@+id/dragView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/fieldIconsGridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:numColumns="4"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"/>
+
+        </LinearLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+</RelativeLayout>

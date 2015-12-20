@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NextButton">
+        <attr name="buttonWidth" format="float"/>
+        <attr name="buttonHeight" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomSpinner">
+
+    </declare-styleable>
+</resources>

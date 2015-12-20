@@ -1,0 +1,180 @@
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ContentDescription"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/fragment_dialog_background"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/incomeDialogFragmentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelText="Income Amount"
+                app:met_floatingLabelTextColor="@android:color/black"
+                app:met_floatingLabelTextSize="14sp"
+                app:met_primaryColor="@color/materialGreen" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/expDialogFragmentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@android:color/black"
+                app:met_floatingLabelTextSize="14sp"
+                app:met_primaryColor="@color/materialRed" />
+
+        </FrameLayout>
+
+
+        <com.giridharkarnik.moneymanager.customViewClasses.CustomSpinner
+            android:id="@+id/incomeDFFieldSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:popupBackground="@android:color/transparent">
+
+        </com.giridharkarnik.moneymanager.customViewClasses.CustomSpinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/calendarCardView"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/calendarImageView"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@mipmap/ic_calendargreen" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dayMonthTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="17 Jun"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/yearTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="2015"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/incomeDFOkFAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:longClickable="true"
+                    android:src="@drawable/ic_done"
+                    app:fab_colorNormal="@color/materialGreen"
+                    app:fab_colorPressed="@color/materialGreen"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/incomeDFCancelFAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/incomeDFOkFAB"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_toLeftOf="@+id/incomeDFOkFAB"
+                    android:layout_toStartOf="@+id/incomeDFOkFAB"
+                    android:longClickable="true"
+                    android:src="@drawable/ic_cancel"
+                    app:fab_colorNormal="@android:color/holo_red_light"
+                    app:fab_colorPressed="@color/fieldColorPD"
+                    app:fab_size="mini" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

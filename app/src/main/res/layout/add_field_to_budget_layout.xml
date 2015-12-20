@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_dialog_background"
+    android:layout_margin="5dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/fieldBudgetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:inputType="numberDecimal"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="Income Amount"
+        app:met_floatingLabelTextColor="@android:color/black"
+        app:met_floatingLabelTextSize="14sp"
+        app:met_primaryColor="@color/materialGreen"
+        android:textColor="@android:color/black"/>
+
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+</LinearLayout>

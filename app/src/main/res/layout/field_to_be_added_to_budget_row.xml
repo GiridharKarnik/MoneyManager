@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_mobile"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fieldToBeAddedImageView" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="clip_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Talktime"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:padding="3dp"
+                android:id="@+id/fieldToBeAddedTitle"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/fieldBudgetAmount"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fieldToBeAddedFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:longClickable="true"
+            android:src="@drawable/ic_done"
+            app:fab_colorNormal="@color/materialGreen"
+            app:fab_colorPressed="@android:color/black"
+            app:fab_size="mini" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

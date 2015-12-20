@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.giridharkarnik.moneymanager.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/mainDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Main Layout-->
+        <LinearLayout
+            android:id="@+id/mainRootActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/app_bar_libs"
+                        layout="@layout/app_bar"/>
+
+                    <it.neokree.materialtabs.MaterialTabHost
+                        android:id="@+id/materialTabHost"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        app:accentColor="@color/accentColor"
+                        app:primaryColor="@color/ColorPrimary"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/magicLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_libs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/tool_bar_shadow"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Drawer Layout-->
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/moneyImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/money_man"/>
+
+
+            <ListView
+                android:id="@+id/featuresListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/moneyImageView"
+                android:layout_marginLeft="5dp"
+                android:divider="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+
+
+
+

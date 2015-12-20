@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fragment_dialog_background">
+
+    <ListView
+        android:id="@+id/fieldsInABudgetListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@null"
+        android:focusable="false" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/fieldBudgetAmountMaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Budget Amount"
+                app:met_floatingLabelTextColor="@color/materialGreen"
+                app:met_floatingLabelTextSize="14sp"
+                app:met_primaryColor="@color/materialGreen"
+                android:textColor="@android:color/black"
+                android:hint="Budget Amount" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/fieldSuggestionSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/addFieldToBudgetFAB"
+                    android:layout_toStartOf="@+id/addFieldToBudgetFAB" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/addFieldToBudgetFAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:longClickable="true"
+                    android:src="@drawable/ic_done"
+                    app:fab_colorNormal="@color/materialGreen"
+                    app:fab_colorPressed="@android:color/black"
+                    app:fab_size="mini"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alteredLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/addNewFieldsToBudgetCardView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/materialGreen"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="Add fields to budget"
+                android:textColor="@android:color/white" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
+

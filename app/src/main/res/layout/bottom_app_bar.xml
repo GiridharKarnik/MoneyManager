@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorPrimary">
+
+    <ImageView
+        android:layout_marginStart="40dp"
+        android:id="@+id/bottom_appBar_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"/>
+
+    <ImageView
+        android:layout_marginStart="40dp"
+        android:id="@+id/bottom_appBar_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"/>
+
+</android.support.v7.widget.Toolbar>

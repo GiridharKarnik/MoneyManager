@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+         <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- White arrow -->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="circularImageViewStyle" parent="@style/Theme.AppCompat.NoActionBar">
+
+    </style>
+
+    <style name="myMaterialStyle" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Set AppCompat’s color theming attrs -->
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+    <style name="myMaterialStyleTwo" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Set AppCompat’s color theming attrs -->
+        <item name="colorPrimary">@color/materialRed</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+</resources>
